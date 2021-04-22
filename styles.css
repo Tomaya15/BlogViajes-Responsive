@@ -1,0 +1,211 @@
+/* UTILIDADES */
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+img{
+    max-width: 100%;
+}
+
+h2{
+    color: #00B8E4;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 15px;
+    line-height: 2;
+}
+.boton{
+    background-color: #00B8E4;
+    padding: 10px 30px; 
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .3s ease-in-out ;
+}
+.boton:hover{
+    background-color: #e09f3e;
+}
+/* Navegacion responsive */
+.barra{
+    overflow: hidden;
+}
+#nav:target{
+    max-height: 800px;
+}
+
+.mobile-menu{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+}
+.navegacion-principal{
+    max-height: 0;
+    transition: .5s;
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        max-height: unset;
+    }
+    
+    .mobile-menu,
+    .cerrar{
+        display: none !important;
+    }
+}
+
+/* NAVEGACION */
+.barra{
+    background-color: #DB008D;
+}
+.navegacion-principal a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+@media (min-width: 768px) {
+    .navegacion-principal a{
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+.navegacion-principal a:hover{
+    background-color: #00B8E4;
+}
+/* HEADER */
+.site-header{
+    padding: 20px 0px;
+}
+.site-header img{
+    padding-left: 20px;
+}
+
+/* MAIN Y SIDEBAR */
+
+.contenido-principal 
+.sidebar{
+    padding: 20px;
+    margin-top: 0;
+}
+@media (min-width: 768px) {
+    .contenido-principal{
+        width: 70%;   /* Ya que el ancho mide 1200px, reparto las medidas 800px contenido principal para que el contenido principal mida un 70% de la pagina  */
+        float: left;
+        padding: 0 40px 0 0;
+        margin-top: 40px;
+    }
+    
+    .sidebar{   
+        width: 30%;  /* 400px sidebar */
+        float: right ;
+        padding: 0;
+        margin-top: 40px;
+    }    
+}
+  /* main */
+.contenido-articulo{
+    margin-bottom: 60px;
+}
+
+.contenido-articulo img{
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .contenido-articulo img{
+        width: 400px;
+        float: left;
+        margin: 0 30px 0 0; 
+    }
+}
+.contenido-articulo p {
+    text-align: justify;
+}
+
+  /*sidebar */
+
+.sidebar{
+    padding-top: 0;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.sidebar ul li:hover{
+    background-color: #00B8E4;
+    color: #FFFFFF;
+}
+.sidebar ul li a {
+    color: #00B8E4;
+    font-size: 18px;
+    text-decoration: none;
+}
+.sidebar ul li:hover a{
+    color:#FFFFFF;
+}
+/* FOOTER */
+.footer-sitio{
+    background-color: #DB008D;
+    padding-top: 5px;
+    margin-top: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+.footer-sitio h2{
+    color: #FFFFFF;
+}
+
+.footer-sitio a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.footer-sitio a:last-of-type{
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-sitio .nosotros{
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .footer-sitio .menu{
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+.copyright{
+    background-color: #b10474;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
